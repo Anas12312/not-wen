@@ -1,0 +1,7 @@
+@font-face {
+font-family: 'KarmaRegular';
+src: url('karma-webfont.eot');
+src: local('☺'), url('karma-webfont.eot?#iefix') format('embedded-opentype'),url('karma-webfont.woff') format('woff'),url('karma-webfont.ttf') format('truetype'),url('karma-webfont.svg#KarmaRegular') format('svg');
+font-weight: normal;
+font-style: normal;}
+

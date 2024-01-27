@@ -1,0 +1,187 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'karma';
+  font-style: normal;
+  font-weight: normal;
+  src: local('karma'), url('../../public/Karma/karma-webfont.woff') format('woff');
+}
+
+@layer components {
+  .nav-bar {
+    @apply w-full h-[12%] bg-white border-black flex justify-between items-center absolute
+  }
+
+  .nav-bar-item {
+    @apply text-black flex justify-center items-center text-lg font-extralight p-2 mx-1 rounded-md hover:cursor-pointer hover:bg-gray-200 font-karma
+  }
+
+  .trans {
+    @apply transition-all ease-linear duration-300
+  }
+
+  .nav-bar-buy-now {
+    @apply flex justify-center items-center border rounded-md bg-black text-white p-2 px-5 mx-5 hover:cursor-pointer hover:bg-gray-400 outline-text-none
+  }
+
+  .sidebar-tooltip {
+    @apply absolute w-auto p-2 m-2 min-w-max top-14 rounded-md shadow-md font-karma text-white bg-gray-900 text-xs font-bold transition-all duration-100 scale-0 origin-top;
+  }
+}
+
+.container-anas {
+  background-image: url("../../LOL.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+}
+
+#notwen:hover {
+  /* Start the shake animation and make the animation last for 0.5 seconds */
+  animation: shake 0.5s;
+
+  /* When the animation is finished, start again */
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+
+
+
+/* DEMO-SPECIFIC STYLES */
+.typewriter h1 {
+  color: #fff;
+  /* font-family: monospace; */
+  overflow: hidden;
+  /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange;
+  /* The typwriter cursor */
+  white-space: nowrap;
+  /* Keeps the content on a single line */
+  margin: 0 auto;
+  /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em;
+  /* Adjust as needed */
+  padding: 6px;
+  animation:
+    typing 0.75s steps(30, end),
+    blink-caret .5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0
+  }
+
+  to {
+    width: 100%
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+
+  from,
+  to {
+    border-color: transparent
+  }
+
+  50% {
+    border-color: orange
+  }
+}
+
+.outline-text {
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
+}
+
+.outline-text-md {
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
+}
+
+.outline-text-none {
+  -webkit-text-stroke-width: 0px;
+  -webkit-text-stroke-color: black;
+}
+
+
+.spikes {
+  position: relative;
+  background: #2c3e50;
+  height: 50vh;
+}
+
+.spikes::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  left: -0%;
+  top: 100%;
+  z-index: 10;
+  display: block;
+  height: 20px;
+  background-size: 20px 100%;
+  background-image: linear-gradient(135deg, #2c3e50 25%, transparent 25%), linear-gradient(225deg, #2c3e50 25%, transparent 25%);
+  background-position: 0 0;
+}
+
+.text-gradiant {
+  background: linear-gradient(to right, #D327F6, #27E8AC);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.blur-bg {
+  backdrop-filter: blur(12px);
+}
