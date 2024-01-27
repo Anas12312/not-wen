@@ -11,7 +11,7 @@ export default function Token({ref}) {
                     <div className='text-2xl'>DEV & MARKETING  & BURNING MECHANISM <span className='font-sans font-light text-gray-300'>20%</span></div>
                     <div className='nav-bar-buy-now trans ml-0 mt-16'>BUY $NOTWEN</div>
                 </div>
-                <img className='w-[30%]' src="../../public/cat.PNG" alt="" />
+                <img className='w-[30%]' src="../../cat.PNG" alt="" />
             </div>
         </div>
     )
