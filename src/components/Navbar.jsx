@@ -11,13 +11,13 @@ export default function Navbar( {
                 <div onClick={()=>{
                     window.open('https://twitter.com/SolanaToke96918', '_blank')
                 }} className='rounded-full group relative mr-4 hover:bg-gray-200 flex justify-center items-center p-3 cursor-pointer'>
-                    <img className='w-5 h-5' src="../../public/x.png" alt="" />
+                    <img className='w-5 h-5' src="../../x.png" alt="" />
                     <span className="sidebar-tooltip group-hover:scale-100 tracking-widest">
                         x.com
                     </span>
                 </div>
                 <div className='rounded-full mr-4 group relative hover:bg-gray-200 flex justify-center items-center p-3 cursor-pointer'>
-                    <img className='w-5 h-5' src="../../public/birdeye.png" alt="" />
+                    <img className='w-5 h-5' src="../../birdeye.png" alt="" />
                     <span className="sidebar-tooltip group-hover:scale-100 tracking-widest">
                         Birdeye
                     </span>
